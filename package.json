@@ -1,0 +1,17 @@
+{
+  "name": "homebridge-contec",
+  "version": "0.0.80",
+  "description": "Contec integration with apple Homekit",
+  "main": "index.js",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "license": "CC-NC-ND",
+  "engines": {
+    "node": ">=6",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "request": "^2.65.0"
+  }
+}
