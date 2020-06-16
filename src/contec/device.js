@@ -2,7 +2,7 @@ let Config = require("./config");
 let states = Config.states;
 let blindsStates = Config.blindsStates;
 let globals = Config.globals;
-let http = require("../http");
+let {http} = require("../http");
 
 /*** Prorotypes START ***/
 String.prototype.replaceAt = function (index, character) {

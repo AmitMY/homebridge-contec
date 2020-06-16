@@ -1,6 +1,10 @@
 let request = require("request");
 
-const server = "http://10.0.0.100/content/";
+let server = "http://10.0.0.100/content/";
+
+function setServerData(baseUrl, port) {
+  server = `${baseUrl || 'http://10.0.0.100'}:${port || 80}/content/`;
+}
 
 function http(url) {
   return new Promise((resolve, reject) => {
@@ -15,4 +19,4 @@ function http(url) {
   });
 }
 
-module.exports = http;
+module.exports = {http, setServerData};

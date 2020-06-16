@@ -1,6 +1,6 @@
 {
   "name": "homebridge-contec",
-  "version": "0.0.80",
+  "version": "0.0.81",
   "description": "Contec integration with apple Homekit",
   "main": "index.js",
   "keywords": [

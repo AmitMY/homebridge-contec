@@ -1,4 +1,4 @@
-let http = require("../http");
+let { http, setServerData } = require("../http");
 let Device = require("./device");
 let CLight = Device.CLight;
 let CBlinds = Device.CBlinds;
@@ -11,9 +11,10 @@ let Config = require("./config");
 //const allowedTypes = ["Lamp", "Blinds", "Air conditioner", "Tap", "Boiler"];
 
 class ContecManager {
-  constructor(allowedTypes) {
+  constructor(config) {
     this.devices = [];
-    this.allowedTypes = allowedTypes;
+    setServerData(config.url, config.port);
+    this.allowedTypes = config.types;
   }
 
   _parseDevices(string) {
