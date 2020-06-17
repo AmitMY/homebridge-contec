@@ -39,7 +39,8 @@ Currently, it is hard coded to find the contec client on `http://10.0.0.100/cont
   "platforms": [
     {
       "platform": "Contec",
-      "API": "10.0.0.100",
+      "url": "10.0.0.100",
+      "port": "80",
       "types": ["Lamp", "Blinds", "Air conditioner", "Tap", "Boiler"]
     }
   ]

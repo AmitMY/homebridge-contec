@@ -24,7 +24,7 @@ class ContecPlatform {
 
     this.api = api;
     this.api.on("didFinishLaunching", () => {
-      this.contecManager = new ContecManager(config.types || []);
+      this.contecManager = new ContecManager(config || {});
 
       this.log("DidFinishLaunching");
       this.listen();
